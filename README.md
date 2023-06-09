@@ -6,3 +6,7 @@ Este repositório contém uma implementação de estrutura de dados em C#, inclu
 - [Vscode v1.79.0](https://code.visualstudio.com/)
     - [Extensão: C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
     - [Extensão: IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+
+# Referências
+- [Estrutura de dados: descrição, exemplos e mais](https://vidabytes.com/estructura-de-datos/)
+- [Estruturas de dados: uma introdução](https://www.alura.com.br/artigos/estruturas-de-dados-introducao)
