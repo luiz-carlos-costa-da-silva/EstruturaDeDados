@@ -84,9 +84,12 @@ public class Vetor<T>
         }
     }
 
-    public int? Encontrar(T elemento)
+    /// <summary>
+    /// O método retorna a chave do primeiro elemento que encontrar no vetor
+    /// </summary>
+    public int Encontrar(T elemento)
     {
-        int? chave = null;
+        int chave = -1;
         for (int i = 0; i < this.Tamanho; i++)
             if (elemento != null)
                 if (elemento.Equals(this[i]))
