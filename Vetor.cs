@@ -37,7 +37,7 @@ public class Vetor<T>
     {
         int tamanho = this.Tamanho;
         Array.Resize(ref this.elementos, (tamanho + 1));
-        this.elementos[tamanho] = elemento;
+        this[tamanho] = elemento;
     }
 
     /// <summary>
@@ -51,7 +51,7 @@ public class Vetor<T>
     public T Remover()
     {
         int ultimoElemento = this.Tamanho - 1;
-        T removido = this.elementos[ultimoElemento];
+        T removido = this[ultimoElemento];
         T[] elementos = this.elementos.Take(ultimoElemento).ToArray();
         this.Limpar();
         this.Adicionar(elementos);
@@ -66,7 +66,7 @@ public class Vetor<T>
     {
         try
         {
-            T removido = this.elementos[index];
+            T removido = this[index];
             Vetor<T> vetor = this.Filtrar(elemento => {
                 bool resultado = false;
                 if (elemento != null)
