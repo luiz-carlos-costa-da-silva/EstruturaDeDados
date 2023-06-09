@@ -13,4 +13,6 @@ sealed public class Utilitario
     }
 
     public static Vetor<T> CriarVetor<T>(params T[] elementos) => new Vetor<T>(elementos);
+    
+    public static VetorDinamico CriarVetorDinamico(params object[] elementos) => new VetorDinamico(elementos);
 }

@@ -31,16 +31,6 @@ public class Vetor<T>
     }
 
     /// <summary>
-    /// O método adiciona um elemento ao final do vetor
-    /// </summary>
-    public void Adicionar(T elemento)
-    {
-        int tamanho = this.Tamanho;
-        Array.Resize(ref this.elementos, (tamanho + 1));
-        this[tamanho] = elemento;
-    }
-
-    /// <summary>
     /// O método limpa o vetor
     /// </summary>
     public void Limpar() => this.elementos = new T[0];
@@ -59,8 +49,7 @@ public class Vetor<T>
     }
 
     /// <summary>
-    /// O método remove o valor do primeiro elemento que satisfaça
-    /// a função de teste.
+    /// O método remove o valor que corresponde chave
     /// </summary>
     public T Remover(int index)
     {
