@@ -100,11 +100,12 @@ public class Vetor<T>
     /// <summary>
     /// O método ordena os elementos do próprio vetor
     /// </summary>
-    public void Ordenar(bool desc = false)
-    {
-        if (desc) Array.Reverse(this.elementos);
-        else Array.Sort(this.elementos);
-    }
+    public void Ordenar() => Array.Sort(this.elementos);
+
+    /// <summary>
+    /// O método inverte os elementos do próprio vetor
+    /// </summary>
+    public void Reverso() => Array.Reverse(this.elementos);
 
     /// <summary>
     /// O método executa uma dada função em cada elemento do vetor
